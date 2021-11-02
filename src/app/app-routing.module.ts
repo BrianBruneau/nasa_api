@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { SearchImageComponent } from './components/search-image/search-image.component';
+
+
+const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: ''},
+  { path: 'search-image', component: SearchImageComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
